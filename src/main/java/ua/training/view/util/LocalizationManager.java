@@ -5,9 +5,9 @@ import java.util.ResourceBundle;
 
 public class LocalizationManager {
     private static LocalizationManager localizationManager;
-    private String propertyFileName = "resources/menu";
+    private final String propertyFileName = "resources/menu";
     private ResourceBundle bundle;
-    public static LocalizationManager getLocalizationManager() {
+    public static LocalizationManager getInstance() {
         if(localizationManager == null) {
             localizationManager = new LocalizationManager();
         }

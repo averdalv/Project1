@@ -6,6 +6,6 @@ import java.util.Comparator;
 
 public class GenreComparator implements Comparator<Composition> {
     public int compare(Composition firstComposition, Composition secondComposition) {
-        return firstComposition.getGenre().compareTo(secondComposition.getGenre());
+       return firstComposition.getGenre().ordinal()-secondComposition.getGenre().ordinal();
     }
 }

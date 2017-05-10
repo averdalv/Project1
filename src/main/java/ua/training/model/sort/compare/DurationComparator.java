@@ -6,14 +6,6 @@ import java.util.Comparator;
 
 public class DurationComparator implements Comparator<Composition>{
     public int compare(Composition firstComposition, Composition secondComposition) {
-        if(firstComposition.getDuration() < secondComposition.getDuration()) {
-            return -1;
-        }
-        else if(firstComposition.getDuration() > secondComposition.getDuration()) {
-            return 1;
-        }
-        else {
-            return 0;
-        }
+       return firstComposition.getDuration() - secondComposition.getDuration();
     }
 }

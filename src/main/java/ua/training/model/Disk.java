@@ -34,7 +34,7 @@ public class Disk {
         SortHelper helper = new SortHelper(comparator);
         compositions = helper.getSortedCompositions(compositions);
     }
-    public List<Composition> getCompositionsWithSuitableDuration(double minDuration,double maxDuration) {
+    public List<Composition> getCompositionsWithSuitableDuration(int minDuration,int maxDuration) {
         List<Composition> suitableCompositions = new LinkedList<Composition>();
         for(Composition composition : compositions) {
             if(composition.isSuitableDuration(minDuration,maxDuration)) {
