@@ -5,7 +5,7 @@ import java.util.ResourceBundle;
 
 public class LocalizationManager {
     private static LocalizationManager localizationManager;
-    private final String propertyFileName = "resources/menu";
+    private final String propertyFileName = "menu";
     private ResourceBundle bundle;
     public static LocalizationManager getInstance() {
         if(localizationManager == null) {

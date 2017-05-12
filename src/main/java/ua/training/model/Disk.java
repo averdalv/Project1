@@ -26,7 +26,7 @@ public class Disk {
     public double getCommonDuration() {
         double commonDuration=0;
         for(Composition composition:compositions) {
-            commonDuration += commonDuration;
+            commonDuration += composition.getDuration();
         }
         return commonDuration;
     }
@@ -42,5 +42,8 @@ public class Disk {
             }
         }
         return suitableCompositions;
+    }
+    public List<Composition> getCompositions() {
+        return compositions;
     }
 }

@@ -15,7 +15,7 @@ public class SortHelperTest {
     public void testGetSortedCompositionWithDurationComparator() {
         SortHelper sortHelper = new SortHelper(new DurationComparator());
         List<Composition> compositions = new LinkedList<Composition>();
-        compositions.add(new Composition(Genre.BlUES,300,"Let it snow"));
+        compositions.add(new Composition(Genre.BLUES,300,"Let it snow"));
         compositions.add(new Composition(Genre.POP,310,"Yesterday"));
         compositions.add(new Composition(Genre.ROCK,270,"Smells like teen spirit"));
         compositions = sortHelper.getSortedCompositions(compositions);
@@ -25,11 +25,11 @@ public class SortHelperTest {
     public void testGetSortedCompositionWithGenreComparator() {
         SortHelper sortHelper = new SortHelper(new GenreComparator());
         List<Composition> compositions = new LinkedList<Composition>();
-        compositions.add(new Composition(Genre.BlUES,300,"Let it snow"));
+        compositions.add(new Composition(Genre.BLUES,300,"Let it snow"));
         compositions.add(new Composition(Genre.POP,310,"Yesterday"));
         compositions.add(new Composition(Genre.ROCK,270,"Smells like teen spirit"));
         compositions = sortHelper.getSortedCompositions(compositions);
-        Assert.assertTrue(compositions.get(0).getGenre().equals(Genre.ROCK)&&compositions.get(1).getGenre().equals(Genre.BlUES)
+        Assert.assertTrue(compositions.get(0).getGenre().equals(Genre.ROCK)&&compositions.get(1).getGenre().equals(Genre.BLUES)
                 &&compositions.get(2).getGenre().equals(Genre.POP));
 
     }

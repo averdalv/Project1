@@ -21,6 +21,10 @@ public interface GlobalConstants {
     String UA = "ua";
     String US = "us";
     String NUMBER = "number";
-    String EMPTY = "";
-
+    String INT = "int";
+    String EXCEPTION_ARGUMENTS = "exception.arguments";
+    String SPACE = " ";
+    String BRACKET = ")";
+    String COLON = ":";
+    String COMMON_DURATION="common.duration";
 }

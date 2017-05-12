@@ -15,7 +15,7 @@ public class DiskTest {
         compositions.add(new Composition(Genre.POP,120,"First"));
         compositions.add(new Composition(Genre.ROCK,150,"Second"));
         compositions.add(new Composition(Genre.CLASSICAL,190,"Third"));
-        compositions.add(new Composition(Genre.BlUES,201,"Fourth"));
+        compositions.add(new Composition(Genre.BLUES,201,"Fourth"));
         List<Composition> expectedCompositions= new LinkedList<Composition>();
         expectedCompositions.add(new Composition(Genre.ROCK,150,"Second"));
         expectedCompositions.add(new Composition(Genre.CLASSICAL,190,"Third"));
